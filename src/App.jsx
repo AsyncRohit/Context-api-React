@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className='h-screen w-full'>
 <Navbar />
-<h1 className='text-red-500'>{data}</h1>
+<h1 className='text-red-500'>{data[0]}</h1>
     </div>
   )
 }

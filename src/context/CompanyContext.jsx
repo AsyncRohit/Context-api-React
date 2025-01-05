@@ -1,12 +1,13 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
  export const CompanyDataContext = createContext();
 
 const CompanyContext = ({children}) => {
     const data=children
-  return (
+const [companyname, setCompanyName] = useState('Rohit')
+    return (
     <div>
-        <CompanyDataContext.Provider value={'X company'}>
+        <CompanyDataContext.Provider value={[companyname,setCompanyName]}>
         {children }
         </CompanyDataContext.Provider>
     </div>
