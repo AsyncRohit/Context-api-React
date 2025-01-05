@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  font-weight: 600;
+  font-family: Gilroy;
+  letter-spacing: 4px;
+  
+}
